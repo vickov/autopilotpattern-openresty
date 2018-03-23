@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  openresty:
+    build: .
+    mem_limit: 1g
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      - CONSUL=10.0.0.40
+      - CONSUL_AGENT=1
+    

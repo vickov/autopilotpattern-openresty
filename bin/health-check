@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+
+curl -fsSo /dev/null "http://localhost/"
